@@ -64,9 +64,9 @@ var globalNetworkCheckSettings={href: location.protocol+'//'+location.hostname+(
 //  to globalAccountSettings ... it is possible to combine this option with the globalAccountSettings although it is not recommended
 // this option invokes a login screen and disallows access until the client gets correct XML configuration file from the server
 // the timeOut sets the timeout for jQuery .ajax call (in miliseconds)
-//var globalNetworkAccountSettings={href: 'https://www.config-server.com/auth/', timeOut: 30000};
+//var globalNetworkAccountSettings={href: 'https://www.config-server.com/auth.php', timeOut: 30000};
 // default configuration if the auth module is located in the currect subdirectory
-//var globalNetworkAccountSettings={href: location.protocol+'//'+location.hostname+(location.port ? ':'+location.port : '')+location.pathname.replace(RegExp('index\.html$'),'')+'auth/', timeOut: 30000};
+//var globalNetworkAccountSettings={href: location.protocol+'//'+location.hostname+(location.port ? ':'+location.port : '')+location.pathname.replace(RegExp('index\.html$'),'')+'auth.php', timeOut: 30000};
 
 // use jQuery .ajax() auth or custom header for HTTP basic auth (default)
 // set this option to true if your server uses digest auth (note: you may experience auth popups on some browsers)
