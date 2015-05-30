@@ -1,5 +1,5 @@
 <?php
-	require_once(dirname(__FILE__).'/ldap_conf.inc');
+	require_once(__DIR__.'/ldap_conf.inc.php');
 
 	function ldap_authenticate()
 	{

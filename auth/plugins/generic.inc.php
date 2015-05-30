@@ -1,5 +1,5 @@
 <?php
-	require_once(dirname(__FILE__).'/generic_conf.inc');
+	require_once(__DIR__.'/generic_conf.inc.php');
 
 	function generic_authenticate()
 	{

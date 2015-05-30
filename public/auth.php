@@ -1,8 +1,8 @@
 <?php
-	require_once('config.inc');
-	require_once('common.inc');
-	require_once('cross_domain.inc');
-	require_once('plugins/'.$config['auth_method'].'.inc');	// configured module - it defines the 'MODULE_authenticate()' function
+	require_once(dirname(__DIR__) . '/auth/config.inc.php');
+	require_once(dirname(__DIR__) . '/auth/common.inc.php');
+	require_once(dirname(__DIR__) . '/auth/cross_domain.inc.php');
+	require_once(dirname(__DIR__) . '/auth/plugins/'.$config['auth_method'].'.inc.php');	// configured module - it defines the 'MODULE_authenticate()' function
 
 	if(call_user_func($config['auth_method'].'_authenticate')!==1)
 	{
