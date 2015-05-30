@@ -929,49 +929,6 @@ textarea[readonly].safari_hack
 	color: #2d2d2d;
 }
 
-#cacheDialog
-{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	overflow: visible;
-	background: #ffffff;
-	display: none;
-	opacity: 0.95;
-	text-align: center;
-	z-index: 200;
-	cursor:default;
-
-	user-select: none;
-	-webkit-user-select:none;
-	-moz-user-select: -moz-none;
-}
-
-#cacheDialogText
-{
-	position: absolute;
-	width: 100%;
-	bottom: 50%;
-	vertical-align: middle;
-	font-size: 2em;
-}
-
-#cacheDialogButtonWrapper
-{
-	position: absolute;
-	left: 40%;
-	right: 40%;
-	bottom: 40%;
-}
-
-#cacheDialogButton
-{
-	font-size: 2em !important;
-	border: 2px solid #c0c0c0;
-}
-
 #MainLoader
 {
 	position: absolute;

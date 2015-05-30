@@ -5,9 +5,8 @@ What you need to know before you start to configure the client:
  4.) digest authentication problems and how to solve them (if your server uses digest auth)
  5.) problems with SSL /https/ and invalid (or self-signed) certificates
  6.) choose your setup type (3 different setup types are supported)
- 7.) HTML5 cache update
- 8.) Generic installation instruction
- 9.) DAViCal (non cross-domain) installation instructions
+ 7.) Generic installation instruction
+ 8.) DAViCal (non cross-domain) installation instructions
 
 1.) Your principal URL
     - What is my principal URL?
@@ -111,19 +110,15 @@ What you need to know before you start to configure the client:
               - update your auth/config.inc:
                   set the $config['auth_send_authenticate_header'] back to false
 
-7.) HTML5 cache update
-    You MUST execute the cache_update.sh script every time you update your configuration or any other file (otherwise your browser will use the previous version of files stored in HTML5 cache); alternatively you can update the cache.manifest manually - edit the second line beginning with "#V 20" to anything else (this file simple needs "some" change)
-
-8.) Generic installation instructions
+7.) Generic installation instructions
 	a.) read 1-7 above :-)
 	b.) copy the source code into your web server directory (if you use Apache it is strongly recommended to enable the following modules: mod_expires, mod_mime and mod_deflate ... see .htaccess for more details)
 	c.) set your CardDAV/CalDAV server related configuration in config.js (see 6.))
 	d.) set other configuration options in config.js (see comments in config.js)
-	e.) update your HTML5 cache (see 7.))
-	f.) open the installation directory in your browser
-	g.) login and use the client :-)
+	e.) open the installation directory in your browser
+	f.) login and use the client :-)
 
-9.) DAViCal (non cross-domain) installation instructions
+8.) DAViCal (non cross-domain) installation instructions
 	a.) copy the source code into your DAViCal "htdocs" directory (or copy it into other directory and use web server alias in your DAViCal virtual server configuration, e.g.: "Alias /client/ /usr/share/client/")
 	b.) open the installation directory in your browser
 	c.) login and use the client :-) ... note: if you changed something in config.js (not required) see 7.)
