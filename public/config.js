@@ -268,7 +268,7 @@ var globalWeekendDays=[0, 6];
 //  - support for todo DTSTART attribute is disabled
 //  - support for todo STATUS attribute other than COMPLETED and NEEDS-ACTION is disabled
 //  - [iOS6 only] support for LOCATION and URL attributes is disabled
-var globalAppleRemindersMode=true;
+var globalAppleRemindersMode=false;
 
 // NOTE: subsribed calendars are NOT "shared" calendars ... for "shared" calendars see the delegation option in globalAccountSettings, globalNetworkCheckSettings and globalNetworkAccountSettings
 // array of subscribed (read-only) calendars; each calendar is identified by an url address (for example: http://something.com/calendar.ics)
@@ -283,7 +283,7 @@ var globalAppleRemindersMode=true;
 //   Apple stores this attribute as 'itemX.X-ABDATE;TYPE=pref:2000-01-01\r\nitemX.X-ABLabel:_$!<Anniversary>!$_\r\n'
 //   other clients store this attribute as 'X-ANNIVERSARY:2000-01-01\r\n'
 //  choose 'apple' or 'other' (lower case) for your 3rd party client compatibility (you can chose both: ['apple', 'other'] but it can cause many problems in the future, for example: duplicate anniversary dates, invalid/old anniversary date in your clients, and many others ...)
-var globalCompatibility={anniversaryOutputFormat: ['apple']};
+var globalCompatibility={anniversaryOutputFormat: ['other']};
 
 // set the collection sorting and displaying - set an array of values/variables for each option (see the NOTE below)
 //  possible variables in values: last, middle, first, prefix, suffix
