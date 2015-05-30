@@ -309,7 +309,7 @@ var globalGroupContactsByCompanies=false;
 var globalUriHandlerTel='tel:';	// if 'tel' is not supported by system/browser, you can use 'callto' or 'skype'
 var globalUriHandlerEmail='mailto:';
 var globalUriHandlerUrl='http://';	// the value is used only if no URI handler is defined in the URL
-var globalUriHandlerProfile={'twitter': 'http://twitter.com/%u', 'facebook': 'http://www.facebook.com/%u', 'flickr': 'http://www.flickr.com/photos/%u', 'linkedin': 'http://www.linkedin.com/in/%u', 'myspace': 'http://www.myspace.com/%u', 'sinaweibo': 'http://weibo.com/n/%u'};
+var globalUriHandlerProfile={'twitter': 'http://twitter.com/%u', 'flickr': 'http://www.flickr.com/photos/%u', 'linkedin': 'http://www.linkedin.com/in/%u', 'sinaweibo': 'http://weibo.com/n/%u'}
 
 // default country for new address fields (must be defined in addressTypes variable - see common.js)
 var globalDefaultAddressCountry='us';
