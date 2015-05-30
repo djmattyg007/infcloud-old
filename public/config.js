@@ -107,9 +107,9 @@ var globalSearchTransformAlphabet={'[ÀàÁáÂâÄäÆæÃãÅåĀā]': 'a', '[
 //  if undefined (or empty), update notifications will be shown to all users
 var globalNewVersionNotifyUsers=[];
 
-// set the datepicker format (see http://docs.jquery.com/UI/Datepicker/formatDate for valid values)
+// set the datepicker format (see http://api.jqueryui.com/datepicker/#utility-formatDate for valid values)
 // note: date format is now predefined for each localization - use this option only if you want to use custom date format instead of the predefined one
-//var globalDatepickerFormat='dd.mm.yy';
+//var globalDatepickerFormat='yy.mm.dd';
 
 // set the datepicker first day of the week: Sunday is 0, Monday is 1, etc.
 var globalDatepickerFirstDayOfWeek=1;
